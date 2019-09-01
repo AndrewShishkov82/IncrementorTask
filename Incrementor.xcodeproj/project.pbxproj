@@ -9,7 +9,13 @@
 /* Begin PBXBuildFile section */
 		6CA2A894231C09F000D46BEF /* Incrementor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CA2A88A231C09F000D46BEF /* Incrementor.framework */; };
 		6CA2A899231C09F000D46BEF /* IncrementorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA2A898231C09F000D46BEF /* IncrementorTests.swift */; };
-		6CA2A89B231C09F000D46BEF /* Incrementor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA2A88D231C09F000D46BEF /* Incrementor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CA2A8AB231C0A9A00D46BEF /* DummyLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA2A8A4231C0A9A00D46BEF /* DummyLock.swift */; };
+		6CA2A8AC231C0A9A00D46BEF /* PThreadMutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA2A8A5231C0A9A00D46BEF /* PThreadMutex.swift */; };
+		6CA2A8AD231C0A9A00D46BEF /* DefaultConstructible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA2A8A6231C0A9A00D46BEF /* DefaultConstructible.swift */; };
+		6CA2A8AE231C0A9A00D46BEF /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA2A8A7231C0A9A00D46BEF /* Lock.swift */; };
+		6CA2A8AF231C0A9A00D46BEF /* IntegerIncrementor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA2A8A8231C0A9A00D46BEF /* IntegerIncrementor.swift */; };
+		6CA2A8B0231C0A9A00D46BEF /* AtomicInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA2A8A9231C0A9A00D46BEF /* AtomicInteger.swift */; };
+		6CA2A8B1231C0A9A00D46BEF /* UnfairLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA2A8AA231C0A9A00D46BEF /* UnfairLock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,11 +30,17 @@
 
 /* Begin PBXFileReference section */
 		6CA2A88A231C09F000D46BEF /* Incrementor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Incrementor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CA2A88D231C09F000D46BEF /* Incrementor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Incrementor.h; sourceTree = "<group>"; };
 		6CA2A88E231C09F000D46BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CA2A893231C09F000D46BEF /* IncrementorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IncrementorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CA2A898231C09F000D46BEF /* IncrementorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementorTests.swift; sourceTree = "<group>"; };
 		6CA2A89A231C09F000D46BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CA2A8A4231C0A9A00D46BEF /* DummyLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyLock.swift; sourceTree = "<group>"; };
+		6CA2A8A5231C0A9A00D46BEF /* PThreadMutex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PThreadMutex.swift; sourceTree = "<group>"; };
+		6CA2A8A6231C0A9A00D46BEF /* DefaultConstructible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultConstructible.swift; sourceTree = "<group>"; };
+		6CA2A8A7231C0A9A00D46BEF /* Lock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
+		6CA2A8A8231C0A9A00D46BEF /* IntegerIncrementor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerIncrementor.swift; sourceTree = "<group>"; };
+		6CA2A8A9231C0A9A00D46BEF /* AtomicInteger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AtomicInteger.swift; sourceTree = "<group>"; };
+		6CA2A8AA231C0A9A00D46BEF /* UnfairLock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnfairLock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +83,13 @@
 		6CA2A88C231C09F000D46BEF /* Incrementor */ = {
 			isa = PBXGroup;
 			children = (
-				6CA2A88D231C09F000D46BEF /* Incrementor.h */,
+				6CA2A8A9231C0A9A00D46BEF /* AtomicInteger.swift */,
+				6CA2A8A6231C0A9A00D46BEF /* DefaultConstructible.swift */,
+				6CA2A8A4231C0A9A00D46BEF /* DummyLock.swift */,
+				6CA2A8A8231C0A9A00D46BEF /* IntegerIncrementor.swift */,
+				6CA2A8A7231C0A9A00D46BEF /* Lock.swift */,
+				6CA2A8A5231C0A9A00D46BEF /* PThreadMutex.swift */,
+				6CA2A8AA231C0A9A00D46BEF /* UnfairLock.swift */,
 				6CA2A88E231C09F000D46BEF /* Info.plist */,
 			);
 			path = Incrementor;
@@ -93,7 +111,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CA2A89B231C09F000D46BEF /* Incrementor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +165,7 @@
 				TargetAttributes = {
 					6CA2A889231C09F000D46BEF = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					6CA2A892231C09F000D46BEF = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -194,6 +212,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CA2A8AC231C0A9A00D46BEF /* PThreadMutex.swift in Sources */,
+				6CA2A8B1231C0A9A00D46BEF /* UnfairLock.swift in Sources */,
+				6CA2A8B0231C0A9A00D46BEF /* AtomicInteger.swift in Sources */,
+				6CA2A8AF231C0A9A00D46BEF /* IntegerIncrementor.swift in Sources */,
+				6CA2A8AB231C0A9A00D46BEF /* DummyLock.swift in Sources */,
+				6CA2A8AE231C0A9A00D46BEF /* Lock.swift in Sources */,
+				6CA2A8AD231C0A9A00D46BEF /* DefaultConstructible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +366,7 @@
 		6CA2A89F231C09F000D46BEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +383,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.Incrementor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +392,7 @@
 		6CA2A8A0231C09F000D46BEF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +417,7 @@
 		6CA2A8A2231C09F000D46BEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IncrementorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +435,7 @@
 		6CA2A8A3231C09F000D46BEF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = IncrementorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
